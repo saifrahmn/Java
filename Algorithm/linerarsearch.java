@@ -9,7 +9,7 @@ public class linerarsearch {
                 return i;
             }
         }
-        return 0;
+        return -1;
     }
 
     public static void main(String args[]){
