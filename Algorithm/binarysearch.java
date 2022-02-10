@@ -14,7 +14,7 @@ public class binarysearch{
                 return mid;
             }
         } 
-        return 0;
+        return -1;
     }
     public static void main(String args[]){
         int arr[]={2,5,8,12,16,20,38,56,72,91},target=12;
