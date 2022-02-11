@@ -13,4 +13,7 @@ class network(object):
                 a= sigmoid(np.dot(w, a)+b)
             return a
             
-        def SGD(self, training_data, epochs, mini_batch_sizes,eta,test_data=None)
+        def SGD(self, training_data, epochs, mini_batch_sizes,eta,test_data=None):
+            if test_data: n_test = len(test_data)
+            n = len(training_data)
+            for j in xrange(epochs)

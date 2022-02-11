@@ -21,3 +21,5 @@ public class binarysearch{
         System.out.println("the output of the search is" + search(arr,target));
     }
 }
+
+//The code you write presents you and to be a best coder is easy if you have passion for it
