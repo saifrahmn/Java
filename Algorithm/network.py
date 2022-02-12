@@ -17,3 +17,4 @@ class network(object):
             if test_data: n_test = len(test_data)
             n = len(training_data)
             for j in xrange(epochs)
+#these is a comment to check whether the Zed auto puts the code in the repositary
