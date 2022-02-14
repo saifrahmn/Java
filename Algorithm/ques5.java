@@ -1,10 +1,7 @@
 import java.util.*;
-
-//leetcode ques no3
-public class longestsubstring {
-    
-        public static int lengthOfLongestSubstring(String s) {
-            int i = 0, j = 0, ans = 0;
+public class ques4{
+    public static String longestPalindrome(String s){
+        int i = 0, j = 0, ans = 0;
             Set<Character> chars = new HashSet<>();
             for (char c : s.toCharArray()) {
                 while (chars.contains(c)) {
@@ -15,11 +12,10 @@ public class longestsubstring {
                 ++j;
             }
             return ans;
-        }
-    
-    public static void main(String args[]){
-        String s="abbatrwat";
-        
-        System.out.println(lengthOfLongestSubstring(s));
+    }
+    public static void main(String[] args){
+        String s="babad";
+        System.err.println(longestPalindrome(s));
+
     }
 }
