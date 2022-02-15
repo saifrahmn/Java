@@ -16,5 +16,11 @@ class network(object):
         def SGD(self, training_data, epochs, mini_batch_sizes,eta,test_data=None):
             if test_data: n_test = len(test_data)
             n = len(training_data)
-            for j in xrange(epochs)
+            for j in xrange(epochs):
+                random.shuffle(training_data)
+                mini_batches=[
+                    training_data[k:k+mini_batch_sizes]
+                    for k in xrange(0, n, mini_batch_size)]
+                for mini_batch in mini_batches:
+                    self.update_mini_batch(mini_batch_size)
 #these is a comment to check whether the Zed auto puts the code in the repositary
