@@ -1,23 +1,23 @@
 import java.util.*;
+import java.lang.*;
+
 public class ques5{
-    public static int longestPalindrome(String s){
-     int i=0, j=0, ans=0;
-     Set<Character> chars= new HashSet<>();
-     for(char c: s.toCharArray()){
-         while(chars.contains(c)){
-             chars.remove(s.charAt(i++));
-         }
-         chars.add(c);
-         ans = Math.max(ans, j-i+1);
-         ++j;
-         System.out.println(chars);
-     }
-     
-     return ans;
+    public static String longestPalindrome(String s){
+        String[] pal={};
+        int p=0;
+        int len = s.length()-1;
+        for(int i=0;i<=len;i++){
+            for(int j=0;j<=i;j++){
+                if(pal[p].charAt(j)==s.charAt(i)){
+                    pal[p]=st;
+                    p++
+                }
+                st
+            }
+        }
     }
     public static void main(String[] args){
-        String s="abcddeqde";
-        System.err.println(longestPalindrome(s));
-
+        String s="babad";
+        System.out.println(longestPalindrome(s));
     }
 }
