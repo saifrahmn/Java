@@ -5,4 +5,4 @@ import os
 def get_chatterbot_version():
     config = configparser.ConfigParser()
 
-    current_directory = os.path.dirname(os.path.abspath(__file__))
+    current_directory = os.path.dirname
