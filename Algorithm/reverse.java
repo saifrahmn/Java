@@ -3,14 +3,18 @@ public class reverse {
         String str="saifrahman";
         System.out.println(solution(str));
     }
-    public static String solution(String str){
+    public static char solution(String str){
         int i;
+        char s;
+
         int len=str.length()-1;
         for( i=0;i<=len;i++){
             for(int j=len;j>0;j--){
-                str.charAt(i)=str.charAt(j);
+                s= str.charAt(j);
+                return s;
             }
         }
-        return str;
+        char sr='a';
+        return sr;
     }
 }
